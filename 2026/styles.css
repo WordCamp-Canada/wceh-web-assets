@@ -192,3 +192,9 @@ ul.wp-block-navigation-submenu a:hover {
 footer.wp-block-template-part {
 	margin-top: 0;
 }
+
+/* Tickets Shortcode */
+
+body.admin-bar #tix {
+  padding-top: 0;
+}
