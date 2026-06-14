@@ -1,0 +1,194 @@
+/* Globals */
+body {
+	background-color: var(--wp--preset--color--custom-primary-darkest);
+	background-image: linear-gradient(rgba(25, 66, 67, 0.25), rgba(25, 66, 67, 0.75)), url('https://raw.githubusercontent.com/troychaplin/troychaplin/refs/heads/master/wceh/images/hero-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	position: relative;
+}
+
+/* Main Spacing */
+main:has(> .wp-block-post-content > .wide-group:last-child) + footer {
+	margin-top: calc(var(--wp--preset--spacing--40) * -1);
+}
+
+main
+
+/* Site Title */
+.wp-block-site-title a:hover {
+	color: var(--wp--preset--color--custom-highlight);
+}
+
+.site-title a {
+	text-decoration: none;
+}
+
+/* Navigation */
+.wp-block-navigation .wp-block-navigation-link a:hover {
+	color: var(--wp--preset--color--custom-highlight);
+	text-decoration: none;
+}
+
+/* Submenu Navigation */
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+	overflow: hidden !important;
+	min-width: 225px !important;
+	background: linear-gradient(135deg,rgb(9,40,42) 29%,rgb(28,104,105) 100%);
+	border-radius: 7px;
+	border: 1px solid var(--wp--preset--color--custom-white-pale);
+	box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.7);
+	color: white;
+}
+
+ul.wp-block-navigation-submenu a {
+	color: white;
+}
+
+ul.wp-block-navigation-submenu a:hover {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Core Heading */
+.wp-block-heading {
+	margin-top: var(--wp--preset--spacing--30);
+}
+
+.wp-block-heading + .wp-block-heading {
+	margin-top: var(--wp--preset--spacing--10);
+}
+
+/* Core Button */
+.wp-block-button .wp-block-button__link:hover {
+	background-color: var(--wp--preset--color--custom-hover);
+	color: var(--wp--preset--color--custom-white);
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+	background-color: var(--wp--preset--color--custom-hover) !important;
+	border-color: var(--wp--preset--color--custom-hover) !important;
+}
+
+/* Group Classes */
+.wide-group {
+	padding-top: var(--wp--preset--spacing--40);
+	padding-bottom: var(--wp--preset--spacing--40);
+	margin-top: 0;
+}
+
+.wide-group + .wide-group {
+	margin-top: 0;
+}
+
+.wide-group.wide-group--dark:not(.wide-group--dividers) + .wide-group.wide-group--dark:not(.wide-group--dividers),
+.wide-group.wide-group--image + .wide-group.wide-group--image {
+	padding-top: 0 !important;
+}
+
+.wide-group + :not(.wide-group) {
+	margin-top: var(--wp--preset--spacing--40);
+}
+
+.wide-group--image {
+	background-color: var(--wp--preset--color--custom-black);
+	background-size: cover;
+	background-position: center;
+}
+
+.wide-group--fadein {
+	background: linear-gradient(to bottom, transparent 0, var(--wp--preset--color--custom-primary-darkest) 800px);
+}
+
+/* Hero Group */
+.wide-group--hero .wp-block-heading {
+	font-weight: 800;
+	line-height: clamp(3.5rem, 5vw + 2rem, 7rem) !important;
+	letter-spacing: clamp(-7px, -0.5vw - 1px, -2px) !important;
+}
+
+/* Card Grids */
+.card-grid {
+	display: grid !important;
+}
+
+.card-grid--two {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.card-grid--6040 {
+	grid-template-columns: 60% 40%;
+}
+
+.card-grid--4060 {
+	grid-template-columns: 40% 60%;
+}
+
+.card-grid--three {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.card-grid--four {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1152px) {
+	.card-grid--blog {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+}
+
+@media (max-width: 896px) {
+	.card-grid--four,
+		    .card-grid--6040,
+		    .card-grid--4060 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 768px) {
+	.card-grid--three,
+		    .card-grid--blog {
+		grid-template-columns: 1fr;
+	}
+	
+	.card-grid--blog .wp-block-post-featured-image {
+		max-width: 240px !important;
+		height: auto !important;
+		margin-left: 0 !important;
+		margin-right: auto !important;
+	}
+}
+
+@media (max-width: 640px) {
+	.card-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 640px) {
+	.card-grid--mobile-2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.card-grid__item:hover {
+	border-color: var(--wp--preset--color--custom-highlight) !important;
+}
+
+.card-grid__item--profile figure, .card-grid__item--profile img {
+	width: 100% !important;
+	height: auto !important;
+	border-radius: 3px;
+}
+
+/* Comments */
+.comment-form-comment textarea {
+	background-color: var(--wp--preset--color--custom-white-light);
+	color: var(--wp--preset--color--custom-white);
+	border: 1px solid var(--wp--preset--color--custom-white-pale);
+}
+
+/* Footer */
+footer.wp-block-template-part {
+	margin-top: 0;
+}
