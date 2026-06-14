@@ -199,6 +199,7 @@ body.admin-bar #tix {
   padding-top: 0;
 }
 
-.tix_tickets_table {
+.tix_tickets_table tr,
+.tix_tickets_table td {
     text-align: left;
 }
