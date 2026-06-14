@@ -199,7 +199,11 @@ body.admin-bar #tix {
   padding-top: 0;
 }
 
-.tix_tickets_table tr,
-.tix_tickets_table td {
+.tix_tickets_table thead {
+    background-color: var(--wp--preset--color--custom-primary-darkest);
+    color: var(--wp--preset--color--custom-white);
+}
+
+.tix-tickets-list .tix-column-description {
     text-align: left;
 }
