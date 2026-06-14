@@ -199,7 +199,7 @@ body.admin-bar #tix {
   padding-top: 0;
 }
 
-.tix-notices {
+#tix-notices .tix-notices {
     background: var(--wp--preset--color--custom-white-light) !important;
     border: none !important;
     border-radius: var(--wp--preset--spacing--20) !important;
