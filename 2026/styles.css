@@ -199,7 +199,7 @@ body.admin-bar #tix {
   padding-top: 0;
 }
 
-#tix-notices .tix-notices {
+.tix-notices {
     background: var(--wp--preset--color--custom-white-light) !important;
     border: none !important;
     border-radius: var(--wp--preset--spacing--20) !important;
@@ -212,11 +212,29 @@ body.admin-bar #tix {
     padding: calc(var(--wp--preset--spacing--30) + 0.75rem) !important;
 }
 
-.tix_tickets_table thead {
-    background-color: var(--wp--preset--color--custom-primary-darkest);
-    color: var(--wp--preset--color--custom-white);
+.tix_tickets_table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
 }
 
-.tix-tickets-list .tix-column-description {
+.tix-tickets-list thead th,
+.tix-tickets-list tbody .tix-column-description,
+.tix-tickets-list tbody .tix-column-price,
+.tix-tickets-list tbody .tix-column-remaining,
+.tix-tickets-list tbody .tix-column-quantity {
     text-align: left;
+    padding: min(1.15rem, 1.5vw);
+    background-color: var(--wp--preset--color--custom-primary-dark);
+}
+
+.tix-tickets-list thead th {
+    background-color: var(--wp--preset--color--custom-primary-darkest);
+}
+
+.tix-tickets-list .tix-row-coupon td {
+    text-align: left;
+    padding-top: min(1.15rem, 1.5vw);
+    padding-bottom: min(1.15rem, 1.5vw);
+    background-color: none;
 }
