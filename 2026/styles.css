@@ -198,3 +198,7 @@ footer.wp-block-template-part {
 body.admin-bar #tix {
   padding-top: 0;
 }
+
+.tix_tickets_table {
+    text-align: left;
+}
